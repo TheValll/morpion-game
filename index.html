@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Morpion Game</title>
+  </head>
+  <body>
+    <h1>Tic tac Toe</h1>
+    <div class="endGame">
+      <p id="gameText">....</p>
+      <input type="submit" value="Replay" id="reload" onclick="restart()" />
+    </div>
+    <div class="cells">
+      <div class="cell" data-cells></div>
+      <div class="cell" data-cells></div>
+      <div class="cell" data-cells></div>
+      <div class="cell" data-cells></div>
+      <div class="cell" data-cells></div>
+      <div class="cell" data-cells></div>
+      <div class="cell" data-cells></div>
+      <div class="cell" data-cells></div>
+      <div class="cell" data-cells></div>
+    </div>
+    <div class="scores">
+      <div class="scores-container">
+        <p>Scores : <span id="X">0</span>-<span id="O">0</span></p>
+        <input
+          type="submit"
+          id="gameReset"
+          value="Reset les scores"
+          onclick="gameReset()"
+        />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

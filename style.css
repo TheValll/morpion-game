@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(40, 44, 52);
+  color: white;
+  font-family: "Dela Gothic One", cursive;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  align-content: center;
+}
+.endGame {
+  margin-top: 30px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.endGame input {
+  display: grid;
+  place-items: center;
+  margin-top: 20px;
+  padding: 5px;
+  height: 40px;
+  width: 100px;
+  background-color: white;
+  font-family: "Dela Gothic One", cursive;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  letter-spacing: 1px;
+}
+.cells {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: white;
+}
+.cell {
+  border: 2px solid white;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 42px;
+}
+.scores {
+  margin-top: 30px;
+  text-align: center;
+}
+.scores span {
+  margin: 0 10px 0 10px;
+}
+#gameReset {
+  margin-top: 20px;
+  padding: 5px;
+  height: 40px;
+  width: 200px;
+  background-color: white;
+  font-family: "Dela Gothic One", cursive;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  letter-spacing: 1px;
+}
