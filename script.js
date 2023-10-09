@@ -37,7 +37,7 @@ const checkWin = () => {
 const gameLogic = (e) => {
   e.target.innerHTML = activePlayer;
   e.target.style.color = activePlayer === playerOne ? "green" : "red";
-  if (checkDraw()) {
+  if (checkDraw()  && !checkWin()) {
     text.textContent = "Match nul !";
     cells.forEach((cell) => {
       cell.removeEventListener("click", gameLogic, { once: true });
